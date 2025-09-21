@@ -1,21 +1,21 @@
 {
   "bot-account": {
-    "username": "MM",
+    "username": "MM", 
     "password": "",
     "type": "mojang"
   },
 
   "server": {
-    "ip": "PlayLobby.aternos.me",
-    "port": 57832,
-    "version": "1.12.1"
+    "ip": "PlayLobby.aternos.me", 
+    "port": 57832,   
+    "version": "1.12.1"   
   },
 
   "position": {
     "enabled": false,
-    "x": 42,
-    "y": 64.00,
-    "z": 113.68
+    "x": 0,
+    "y": 0,
+    "z": 0
   },
 
   "utils": {
@@ -43,6 +43,6 @@
 
     "chat-log": true,
     "auto-reconnect": true,
-    "auto-reconnect-delay": 5000
+    "auto-recconect-delay": 500
   }
 }
