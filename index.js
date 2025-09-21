@@ -97,6 +97,20 @@ function createBot() {
     if (config.utils['anti-afk']?.enabled && bot.connected) {
       bot.setControlState('jump', true);
       if (config.utils['anti-afk'].sneak) bot.setControlState('sneak', true);
+
+      // Front-back movement loop
+      let movingForward = true;
+      setInterval(() => {
+        if (!bot.connected) return;
+        if (movingForward) {
+          bot.setControlState('forward', true);
+          bot.setControlState('back', false);
+        } else {
+          bot.setControlState('forward', false);
+          bot.setControlState('back', true);
+        }
+        movingForward = !movingForward;
+      }, 3000); // change direction every 3 seconds
     }
   });
 
