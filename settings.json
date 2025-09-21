@@ -12,10 +12,10 @@
   },
 
   "position": {
-    "enabled": false,
-    "x": 0,
-    "y": 0,
-    "z": 0
+    "enabled": true,
+    "x": 43,
+    "y": 63,
+    "z": 144
   },
 
   "utils": {
